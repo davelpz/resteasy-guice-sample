@@ -1,12 +1,9 @@
 package com.davelpz.rweb;
 
+import javax.ws.rs.ApplicationPath;
 import org.reflections.Reflections;
-import org.reflections.scanners.TypeAnnotationsScanner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.ws.rs.ApplicationPath;
-import java.util.HashSet;
 import java.util.Set;
 
 import static org.reflections.scanners.Scanners.TypesAnnotated;
