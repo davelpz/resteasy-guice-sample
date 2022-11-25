@@ -14,12 +14,12 @@ public class Application extends javax.ws.rs.core.Application {
     Reflections reflections = new Reflections("com.davelpz");
 
     public Application() {
-        LOGGER.error("Starting Appplication");
+        LOGGER.info("Starting Appplication");
     }
 
     @Override
     public Set<Class<?>> getClasses() {
-        LOGGER.error("Entering getClasses");
+        LOGGER.info("Entering getClasses");
         return reflections.get(TypesAnnotated.with(javax.ws.rs.Path.class).asClass());
     }
 }
