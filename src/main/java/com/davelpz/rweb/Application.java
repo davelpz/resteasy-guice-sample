@@ -20,7 +20,6 @@ public class Application extends javax.ws.rs.core.Application {
     @Override
     public Set<Class<?>> getClasses() {
         LOGGER.error("Entering getClasses");
-        Set<Class<?>> annotated = reflections.get(TypesAnnotated.with(javax.ws.rs.Path.class).asClass());
-        return annotated;
+        return reflections.get(TypesAnnotated.with(javax.ws.rs.Path.class).asClass());
     }
 }
