@@ -13,8 +13,7 @@ public class GuiceServletContextListener extends GuiceResteasyBootstrapServletCo
     @Override
     protected List<? extends Module> getModules(ServletContext context)
     {
-        List<? extends Module> modules = Arrays.asList(new RestModule());
-        return modules;
+        return Arrays.asList(new RestModule());
     }
 
     @Override
